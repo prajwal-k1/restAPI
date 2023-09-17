@@ -1,0 +1,20 @@
+### Get all subscribers
+GET http://127.0.0.1:3000/subscribers
+
+### Get subscriber using id
+GET http://127.0.0.1:3000/subscribers/6501fc1b0ddaa2e4c16a965b
+
+### Create new subscriber
+POST http://127.0.0.1:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Lamma",
+    "subscribedToChannel": "LuckyLama"
+}
+
+### Update Subscriber
+PATCH http://127.0.0.1:3000/subscribers/
+
+### Delete Subscriber
+DELETE http://127.0.0.1:3000/subscribers/6501fc1b0ddaa2e4c16a965b
